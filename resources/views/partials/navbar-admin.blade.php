@@ -7,7 +7,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item ms-md-4 ms-auto">
+          <li class="nav-item ms-md-4">
               <div class="dropdown">
                   <a class="nav-link dropdown-toggle {{ request()->is('admin/recruitment*') ? 'active' : '' }} || {{ request()->is('admin/index*') ? 'active' : '' }}" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Pendaftaran</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -17,7 +17,7 @@
                     </ul>
               </div>
             </li>
-            <li class="nav-item ms-md-4 ms-auto">
+            <li class="nav-item ms-md-4">
               <div class="dropdown">
                   <a class="nav-link dropdown-toggle {{ request()->is('') ? 'active' : '' }} || {{ request()->is('') ? 'active' : '' }}" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Manajemen</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -28,7 +28,7 @@
               </div>
             </li>
           @auth
-          <li class="nav-item ms-md-4 ms-auto">
+          <li class="nav-item ms-md-4">
               <div class="dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">{{ auth()->user()->name }}</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">

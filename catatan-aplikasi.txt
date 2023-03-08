@@ -1,0 +1,4 @@
+Hal yang belum beres:
+1. Upload foto masih belum tampil
+2. Admin bisa menambahkan berita dan ditampilkan di semua users
+3. Cetak kartu peserta

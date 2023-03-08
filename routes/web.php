@@ -36,3 +36,5 @@ Route::get('/admin/recruitment/create', [AdminController::class, 'createRecruitm
 Route::post('/admin/recruitment/create', [AdminController::class, 'storeRecruitment'])->middleware('auth');
 Route::get('/admin/recruitment/{recruitment:tahun_ajaran}/edit', [AdminController::class, 'editRecruitment'])->middleware('auth');
 Route::put('/admin/recruitment/{id}', [AdminController::class, 'updateRecruitment'])->middleware('auth');
+
+Route::get('/admin/blog', [BlogController::class, 'tampil_blog'])->name('tampil_blog');

@@ -102,7 +102,7 @@
             <div class="card mb-3 border-0">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="{{ asset($student->foto_ktp_ibu) }}" class="img-fluid rounded-start" alt="{{ $student->nama_ibu }}">
+                        <img src="{{ asset('student-photos/'.$student->foto_ktp_ibu) }}" class="img-fluid rounded-start" alt="{{ $student->nama_ibu }}">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">

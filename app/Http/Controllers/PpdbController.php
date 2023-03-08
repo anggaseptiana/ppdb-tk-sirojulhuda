@@ -13,7 +13,7 @@ class PpdbController extends Controller
     public function beranda()
     {
         return view('pages.beranda', [
-            'title' => 'Beranda PPDB TK Al-Ishlah'
+            'title' => 'Beranda PPDB TK Sirojul Huda'
         ]);
     }
 
@@ -106,7 +106,7 @@ class PpdbController extends Controller
     public function pengumuman()
     {
         return view('pages.pengumuman', [
-            'title' => 'Data Pengumuman Siswa yang Diterima di TK Al-Ishlah',
+            'title' => 'Data Pengumuman Siswa yang Diterima di TK Sirojul Huda',
             'students' => StudentCandidate::with(['recruitment'])->tahunAjaran(request('tahun_ajaran'))->search(request('search'))->active()->paginate(50)->withQueryString(),
             'recruitments' => Recruitment::orderBy('id','desc')->get()
         ]);

@@ -44,28 +44,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-            <li class="nav-item ms-md-4 ms-auto">
+            <li class="nav-item ms-md-4">
             <a class="nav-link" href="#home">Home</a>
             </li>
-            <li class="nav-item ms-md-4 ms-auto">
+            <li class="nav-item ms-md-4">
             <a class="nav-link" href="#profil">Profil</a>
             </li>
-            <li class="nav-item ms-md-4 ms-auto">
+            <li class="nav-item ms-md-4">
             <a class="nav-link" href="#fasilitas">Fasilitas</a>
             </li>
-            <li class="nav-item ms-md-4 ms-auto">
+            <li class="nav-item ms-md-4">
             <a class="nav-link" href="#galeri">Galeri</a>
             </li>
-            <li class="nav-item ms-md-4 ms-auto">
+            <li class="nav-item ms-md-4">
               <a class="nav-link" href="#blog">Blog</a>
             </li>
-            <li class="nav-item ms-md-4 ms-auto">
+            <li class="nav-item ms-md-4">
             <a class="nav-link" href="#kontak">Kontak</a>
             </li>
-            <li class="nav-item ms-md-4 ms-auto">
+            <li class="nav-item ms-md-4">
             <a class="btn btn-success rounded-pill px-4 py-1 mt-1 text-white" href="/ppdb/pengumuman">Cek Hasil PPDB</a>
             </li>
-            <li class="nav-item ms-md-4 ms-auto">
+            <li class="nav-item ms-md-4">
             <a class="btn btn-daftar rounded-pill px-4 py-1 mt-1 " href="/ppdb"><i class="fas fa-user"></i> Daftar</a>
             </li>
         </ul>
@@ -178,7 +178,7 @@
           <p>Guru Kelas B2</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img src="{{ 'assets/images/foto_guru/angga_septiana.jpeg' }}" class="rounded-circle" width="140" height="140" alt="">
+          <img src="{{ 'assets/images/foto_guru/angga_septiana.png' }}" class="rounded-circle" width="140" height="140" alt="">
           <h5 class="nama_guru">Angga Septiana</h5>
           <p>Guru Pendamping</p>
         </div><!-- /.col-lg-4 -->
