@@ -29,7 +29,7 @@
     </form>
     @endif
     @if ( count($students) > 0 )
-        <a href="" class="btn btn-success mb-3">Import Excel</a>
+        <a href="" class="btn btn-success mb-3">Eksport Excel</a>
     @endif
     @if( count($students) > 0 )
     <div class="table-responsive">
@@ -66,6 +66,7 @@
                 @endif
             </td>
             <td>
+                @if ($student->diterima == 'proses seleksi')
                 <a href="/ppdb/student/{{ $student->id }}" class="btn btn-sm btn-info text-white w-100 mb-2">detail</a>
                 <div class="d-flex justify-content-between">
                 <form action="/admin/student/{{ $student->id }}" method="post" class="d-inline" style="width: 47%;">
@@ -80,6 +81,12 @@
                     <input type="hidden" name="diterima" value="tidak lolos">
                     <button href="submit" class="btn btn-sm btn-danger w-100">tolak</button>
                 </form>
+
+                @else
+                <a href="/ppdb/student/{{ $student->id }}" class="btn btn-sm btn-info text-white w-100 mb-2">detail</a>
+                    
+                @endif
+                
                 </div>
             </td>
           </tr>

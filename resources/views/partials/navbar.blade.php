@@ -10,9 +10,6 @@
           <li class="nav-item ms-md-4">
             <a class="nav-link {{ request()->is('ppdb') ? 'active' : '' }}" href="/ppdb">Beranda</a>
           </li>
-          <li class="nav-item ms-md-4">
-              <a class="nav-link {{ request()->is('ppdb/daftar') ? 'active' : '' }}" href="/ppdb/daftar">Daftar</a>
-        </li>
         <li class="nav-item ms-md-4">
             <a class="nav-link {{ request()->is('ppdb/pengumuman') ? 'active' : '' }}" href="/ppdb/pengumuman">Pengumuman</a>
         </li>

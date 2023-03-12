@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.main-dashboard')
 
 @section('content')
 
@@ -9,7 +9,7 @@
     <div class="card mb-3 border-0">
         <div class="row g-0">
           <div class="col-md-2">
-            <img src="{{ asset($student->foto) }}" class="img-fluid rounded-start" alt="{{ $student->nama_lengkap }}">
+            <img src="{{ asset('storage/'.$student->foto) }}" class="img-fluid rounded-start" alt="{{ $student->nama_lengkap }}">
           </div>
           <div class="col-md-10">
             <div class="card-body row">
@@ -76,7 +76,7 @@
             <div class="card mb-3 border-0">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="{{ asset($student->foto_ktp_ayah) }}" class="img-fluid rounded-start" alt="{{ $student->nama_ayah }}">
+                        <img src="{{ asset('storage/'.$student->foto_ktp_ayah) }}" class="img-fluid rounded-start" alt="{{ $student->nama_ayah }}">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -102,7 +102,7 @@
             <div class="card mb-3 border-0">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="{{ asset('student-photos/'.$student->foto_ktp_ibu) }}" class="img-fluid rounded-start" alt="{{ $student->nama_ibu }}">
+                        <img src="{{ asset('storage/'.$student->foto_ktp_ibu) }}" class="img-fluid rounded-start" alt="{{ $student->nama_ibu }}">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -130,7 +130,7 @@
             <div class="card mb-3 border-0">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="{{ asset($student->foto_ktp_wali) }}" class="img-fluid rounded-start" alt="{{ $student->nama_wali }}">
+                        <img src="{{ asset('storage/'.$student->foto_ktp_wali) }}" class="img-fluid rounded-start" alt="{{ $student->nama_wali }}">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -169,30 +169,18 @@
             </dl>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="{{ asset($student->foto_akta) }}" class="img-fluid">
+                    <img src="{{ asset('storage/'.$student->foto_akta) }}" class="img-fluid">
                 </div>
                 <div class="col-md-6">
-                    <img src="{{ asset($student->foto_kk) }}" class="img-fluid">
+                    <img src="{{ asset('storage/'.$student->foto_kk) }}" class="img-fluid">
                 </div>
             </div>
         </div>
     </div>
-
-    @auth
-    <form action="/admin/student/{{ $student->id }}" method="post" class="d-inline">
-        @csrf
-        @method('put')
-        <input type="hidden" name="diterima" value="lolos">
-        <button href="submit" class="btn btn-sm btn-success">terima</button>
-    </form>
-    <form action="/admin/student/{{ $student->id }}" method="post" class="d-inline">
-        @csrf
-        @method('put')
-        <input type="hidden" name="diterima" value="tidak lolos">
-        <button href="submit" class="btn btn-sm btn-danger">tolak</button>
-    </form>
-    @endauth
-
+    <div class="mt-3 row justify-content-end">
+        <div class="col-12 col-md-9 d-flex justify-content-end">
+            <a href="javascript:history.back()" class="btn btn-secondary text-white">Kembali</a>            </div>
+    </div>
 
 
 @endsection

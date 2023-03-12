@@ -2,14 +2,13 @@
 
 @section('content')
 
-    <h1 class="fs-2 ">Selamat Datang di Website PPDB TK Sirojul Huda</h1>
-    <hr class="my-4">
-    <p>Halaman ini merupakan situs resmi Pendaftaran Peserta Didik Baru TK Sirojul Huda. Untuk melakukan pendaftaran silahkan klik menu daftar atau jika sudah mendaftar silahkan cetak bukti pendaftarannya dengan cara masuk ke menu pengumuman dan cetak data siswa yang diterima.<br>Untuk informasi lebih lanjut bisa menghubungi Panitia PPDB melalui No.Tlp/HP berikut: 081234567890 atau e-mail : example@gmail.com</p>
+<h1 class="fs-2">Selamat Datang di Website PPDB TK Sirojul Huda</h1>
+<hr>
 {{-- alurdaftar --}}
 <section class="alur-daftar2" id="alur_daftar2">
     <div class="container">
 
-        <h2 class="fs-2 section-title-green">Alur Pendaftaran</h2>
+        <h2 class="fs-2 section-title-hitam">Alur Pendaftaran</h2>
 
         <div class="row item-alur2">
 
@@ -117,10 +116,8 @@
                     </div>
                 </div>
             </div>
-
-
-
-        </div>
+          </div>
+          <a href="/ppdb/daftar" class="btn btn-secondary mt-5">Daftar sekarang <i class="far fa-hand-point-lef"></i></a>
     </div>
 </section>
 {{-- end alurdaftar --}}

@@ -23,7 +23,14 @@
 <script>
     $(document).ready( function () {
     $('#TabelSiswa').DataTable();
+    $('#TabelBlog').DataTable();
+    $('#TabelUser').DataTable();
 } );
+
+</script>
+
+<script>
+
 </script>
 
 <script src="{{ '/assets/js/script.js' }}"></script>

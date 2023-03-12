@@ -63,10 +63,10 @@
             <a class="nav-link" href="#kontak">Kontak</a>
             </li>
             <li class="nav-item ms-md-4">
-            <a class="btn btn-success rounded-pill px-4 py-1 mt-1 text-white" href="/ppdb/pengumuman">Cek Hasil PPDB</a>
+            <a class="btn btn-success rounded-pill px-4 py-1 mt-1 text-white" href="/ppdb/pengumuman" target="_blank">Cek Hasil PPDB</a>
             </li>
             <li class="nav-item ms-md-4">
-            <a class="btn btn-daftar rounded-pill px-4 py-1 mt-1 " href="/ppdb"><i class="fas fa-user"></i> Daftar</a>
+            <a class="btn btn-daftar rounded-pill px-4 py-1 mt-1 " href="/admin/login" target="_blank"><i class="fas fa-user"></i> Login</a>
             </li>
         </ul>
         </div>
@@ -77,11 +77,11 @@
     {{-- hero --}}
     <section class="hero mt-5" id="hero">
         <div class="container">
-            <h2 class="text-green-dark judul-selamatdatang text-bold fs-1 mt-4">Selamat Datang di <br>TK Sirojul Huda</h2>
+            <h2 class="text-green-dark nama_guru fs-1 mt-4">Selamat Datang di <br>TK Sirojul Huda</h2>
             <p class="fs-6">
                 Jika bapak dan ibu ingin putra putrinya bersekolah<br>di TK Sirojul Huda, segera daftarkan.
             </p>
-            <a href="/ppdb" class="btn btn-daftar rounded-pill px-5 py-2">Daftar</a>
+            <a href="/ppdb" target="_blank" class="btn btn-daftar rounded-pill px-5 py-2">Daftar</a>
         </div>
     </section>
     {{-- end hero --}}
@@ -90,7 +90,7 @@
     <section class="profil bg-light" id="profil">
         <div class="container">
 
-            <h2 class="fs-2 section-title-green judul-selamatdatang">Profil TK Sirojul Huda</h2>
+            <h2 class="fs-2 section-title-green nama_guru">Profil TK Sirojul Huda</h2>
             <p class="mb-3" style="text-align: justify">Taman Kanak-Kanak Sirojul Huda terletak di Kp. Cigalumpit RT 002 RW 012 Desa Nagreg Kendan Kecamatan Nagreg Kab. Bandung. Berdiri pada tahun 2020 di bawah naungan Yayasan Sirojul Huda yang di pimpin oleh Rapi Maulana.</p>
             <p class="mb-3" style="text-align: justify">Tahun 2020, TK Sirojul Huda mengawali aktifitas dengan pendataan calon peserta didik baru, dengan semangat dan antusias masyarakat disekitarnya sehingga calon siswa pada Taman Kanak-Kanak (TK) Sirojul Huda sudah mencapai 43 orang.</p>
             <p class="mb-3" style="text-align: justify">Tujuannya adalah mempersiapkan mereka dengan memberikan pelatihan sebagai bekal masuk Sekolah Dasar. Sebagaimana kita ketahui bahwa materi pelajaran pada tingkat Sekolah Dasar menuntut anak didik mampu membaca, menulis dan berhitung, sedangkan bekal pendidikan ini tidak mereka dapatkan pada jenjang pendidikan sebelumnya.</p>
@@ -111,12 +111,13 @@
     {{-- Visi & Misi --}}
     <section class="visi-misi" id="visi_misi">
         <div class="container">
-            <h2 class="fs-2 section-title-white judul-selamatdatang">Visi & Misi</h2>
+            <h2 class="fs-2 section-title-white nama_guru">Visi, Misi & Tujuan</h2>
             <div class="row">
+              <center>
                 <div class="col-12 col-xl-7 item-visi-misi-kiri">
-                    <h3 class="text-white mt-4">Visi</h3>
+                    <h3 class="text-white mt-4" style="text-align: center;">Visi</h3>
                     <p class="mb-4 text-white">"Terwujudnya anak-anak yang sehat, cerdas, ceria dan berakhlak mulia serta mengembangkan potensi anak".</p>
-                    <h3 class="text-white">Misi</h3>
+                    <h3 class="text-white" style="text-align: center;">Misi</h3>
                     <ol class="mb-4 text-white">
                         <li>Memberikan layanan pendidikan bagi anak usia dini.</li>
                         <li>Membekali Aqidah Islamiyah agar menjadi pribadi yang berakhlakul karimah.</li>
@@ -126,12 +127,10 @@
                         <li>Membiasakan anak untuk berinteraksi dan bersosialisasi dengan teman sebaya dan guru.</li>
                         <li>Menanamkan budi pekerti yang baik pada anak usia dini.</li>
                       </ol>
-                    <h3 class="text-white">Tujuan</h3>
+                    <h3 class="text-white" style="text-align: center;">Tujuan</h3>
                     <p class="mb-4 text-white">Mewujudkan anak yang cerdas, jujur, sopan santun, berkarakter sejak dini dan menjadikan anak yang mampu menyesuaikan diri dengan lingkungan.</p>
                 </div>
-                <div class="col-5 d-none d-xl-block overflow-hidden item-visi-misi-kanan d-flex align-items-end">
-                    <img src="/assets/images/gambar-guru.png" class="img-fluid" alt="Foto guru TK Al-Ishlah sedang mengajar">
-                </div>
+              </center>
             </div>
         </div>
     </section>
@@ -140,8 +139,8 @@
     {{-- Program Unggulan --}}
     <section>
     <div class="container marketing">
-      <h2 class="fs-2 section-title-green judul-selamatdatang mb-2">Manajemen Sekolah</h2>
-      <h4 class="fs-4 section-title-green judul-selamatdatang">Daftar Tenaga Pendidik & Administrasi Sekolah</h4>
+      <h2 class="fs-2 section-title-green  mb-2 nama_guru">Manajemen Sekolah</h2>
+      <h4 class="fs-4 section-title-green nama_guru">Daftar Tenaga Pendidik & Administrasi Sekolah</h4>
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -190,7 +189,7 @@
     {{-- Fasilitas --}}
     <section class="fasilitas" id="fasilitas">
     <div class="container" id="custom-cards">
-      <h2 class="fs-2 section-title-green judul-selamatdatang mb-2">Fasilitas Sekolah</h2>
+      <h2 class="fs-2 section-title-green nama_guru mb-2">Fasilitas Sekolah</h2>
   
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
         <div class="col">
@@ -224,7 +223,7 @@
     {{-- galeri --}}
     <section class="galeri" id="galeri">
         <div class="container">
-            <h2 class="fs-2 section-title-green judul-selamatdatang">Galeri TK Sirojul Huda</h2>
+            <h2 class="fs-2 section-title-green nama_guru">Galeri TK Sirojul Huda</h2>
             <div class="row">
 
                 <div class="col-6 col-md-4 col-lg-3 mb-3">
@@ -299,52 +298,21 @@
     {{-- Awal Blog --}}
     <section class="blog" id="blog">
       <div class="container">
-        <h2 class="fs-2 section-title-green judul-selamatdatang">Blog TK Sirojul Huda</h2>
-    <div class="row">
+        <h2 class="fs-2 section-title-green nama_guru">Blog TK Sirojul Huda</h2>
+        <div class="row">
+      @foreach ($blog as $item)
       <div class="col-sm-3">
         <div class="card text-center">
-          <img src="{{ 'assets/images/galeri-6.jpg' }}" class="card-img-top" alt="...">
+          <img src="{{ asset('storage/'.$item->foto) }}" class="card-img-top" alt="..." width="50" height="175">
           <div class="card-body">
-            <h5 class="card-title subjudul-blog">Visitasi TK Sirojul Huda</h5>
-            <small><i class="fas fa-calendar"></i> 12-08-2022</small>
-            <p class="card-text">Alhamdulillah, TK Sirojul Huda telah melakukan......</p>
+            <h5 class="card-title subjudul-blog">{{ $item->judul }}</h5>
+            <small><i class="fas fa-calendar"></i> {{ $item->tanggal }}</small>
+            <p class="card-text">{{ Illuminate\Support\Str::of($item->keterangan)->limit(30) }}</p>
             <a href="#" class="btn btn-blog rounded-pill px-4 py-1 mt-1">Lihat Selengkapnya</span></a>
           </div>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="card text-center">
-          <img src="{{ 'assets/images/kolase.jpeg' }}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title subjudul-blog">Kamis Kreativitas</h5>
-            <small><i class="fas fa-calendar"></i> 12-08-2022</small>
-            <p class="card-text">Minggu ini kreativitas kolase buah apel tema....</p>
-            <a href="#" class="btn btn-blog rounded-pill px-4 py-1 mt-1">Lihat Selengkapnya</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card text-center">
-          <img src="{{ 'assets/images/galeri-6.jpg' }}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title subjudul-blog">Special title treatment</h5>
-            <small><i class="fas fa-calendar"></i> 12-08-2022</small>
-            <p class="card-text">With supporting text below as a natural lead-in....</p>
-            <a href="#" class="btn btn-blog rounded-pill px-4 py-1 mt-1">Lihat Selengkapnya</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card text-center">
-          <img src="{{ 'assets/images/galeri-6.jpg' }}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title subjudul-blog">Special title treatment</h5>
-            <small><i class="fas fa-calendar"></i> 12-08-2022</small>
-            <p class="card-text">With supporting text below as a natural lead-in....</p>
-            <a href="#" class="btn btn-blog rounded-pill px-4 py-1 mt-1">Lihat Selengkapnya</span></a>
-          </div>
-        </div>
-      </div>
+      @endforeach
     </div>
   </div>
   </section>
@@ -353,7 +321,7 @@
     {{-- kontak --}}
     <section class="kontak bg-light" id="kontak">
         <div class="container">
-            <h3 class="section-title-green judul-selamatdatang">Hubungi Kami</h3>
+            <h3 class="section-title-green nama_guru">Hubungi Kami</h3>
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 col-lg-6">
                     <dl>

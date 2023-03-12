@@ -1,4 +1,8 @@
 Hal yang belum beres:
-1. Upload foto masih belum tampil
-2. Admin bisa menambahkan berita dan ditampilkan di semua users
-3. Cetak kartu peserta
+1. Upload foto masih belum tampil ✅
+2. Admin bisa menambahkan berita dan ditampilkan di semua users ✅
+-Belum ada menu edit dan hapus blog✅
+3. Bikin menu untuk mengelola admin ✅
+4. Cetak kartu peserta -> Admin menerima Data dan bisa mencetak kartu peserta kemudian kartu pesertanya akan dikirim lewat WA
+5. eksport ke excel
+6. membuat halaman baru memuat detail blog

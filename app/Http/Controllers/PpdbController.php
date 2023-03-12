@@ -1,19 +1,29 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Str;
 
 use App\Models\Recruitment;
 use App\Models\StudentCandidate;
+use App\Models\Blog;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
+use DB;
+
 class PpdbController extends Controller
 {
+    public function tampilan_awal()
+    {
+        return view('landing', [
+            'blog' => Blog::orderBy('id', 'desc')->paginate(8),
+        ]);
+    }
 
     public function beranda()
     {
         return view('pages.beranda', [
-            'title' => 'Beranda PPDB TK Sirojul Huda'
+            'title' => 'Beranda PPDB TK Sirojul Huda',
         ]);
     }
 
